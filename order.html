@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Delight Dine | Order</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Delight Dine</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html" class="active">Order</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section
+      class="order-main"
+      style="background-image: url('./images/bgimage.jpg')"
+    >
+      <div class="main-content">
+        <h1>Order Your Favorite Vegetarian Indian Dishes</h1>
+        <p>Freshly prepared and delivered to your doorstep</p>
+      </div>
+    </section>
+
+    <section class="order">
+      <div class="container">
+        <h2>Place Your Order</h2>
+        <form id="order-form">
+          <input type="text" placeholder="Your Name" name="name" required />
+          <input type="tel" placeholder="Phone Number" name="phone" required />
+          <input
+            type="text"
+            placeholder="Your Address"
+            name="address"
+            required
+          />
+          <select name="dish" required>
+            <option value="" disabled selected>Select Dish</option>
+            <option value="butter-paneer">Butter Paneer</option>
+            <option value="paneer-tikka">Paneer Tikka</option>
+            <option value="vegetable-biryani">Vegetable Biryani</option>
+            <option value="butter-naan">Butter Naan</option>
+            <option value="chole-bhature">Chole Bhature</option>
+            <option value="masala-dosa">Masala Dosa</option>
+            <option value="rajma-chawal">Rajma Chawal</option>
+          </select>
+          <button type="submit" class="btn">Submit Order</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Delight Dine. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

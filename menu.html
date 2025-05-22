@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Delight Dine | Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Delight Dine</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main" style="background-image: url('./images/bgimage.jpg')">
+      <div class="main-content">
+        <h1>Welcome to Delight Dine</h1>
+        <p>Feast your eyes on this delectable menu</p>
+      </div>
+    </section>
+
+    <section class="menu">
+      <div class="container">
+        <h2>Our Vegetarian Menu</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <img src="./images/butterpaneer.jpg" alt="Butter Paneer" />
+            <h3>Butter Paneer</h3>
+            <p>Rich, creamy tomato-based cottage cheese curry.</p>
+            <p class="price">₹350</p>
+          </div>
+
+          <div class="menu-item">
+            <img src="./images/paneertikka.jpg" alt="Paneer Tikka" />
+            <h3>Paneer Tikka</h3>
+            <p>Grilled cottage cheese cubes marinated with spices.</p>
+            <p class="price">₹280</p>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="./images/vegetables biryani.jpg"
+              alt="Vegetable Biryani"
+            />
+            <h3>Vegetable Biryani</h3>
+            <p>Fragrant basmati rice cooked with mixed vegetables & spices.</p>
+            <p class="price">₹350</p>
+          </div>
+          <div class="menu-item" onclick="selectDish('Chole Bhature')">
+            <img src="./images/chhole bhature.jpg" alt="Chole Bhature" />
+            <h3>Chole Bhature</h3>
+            <p>Spicy chickpeas with fluffy fried bread a taste of tradition.</p>
+            <p class="price">₹250</p>
+          </div>
+
+          <div class="menu-item" onclick="selectDish('Masala Dosa')">
+            <img src="./images/masaldosa.jpg" alt="Masala Dosa" />
+            <h3>Masala Dosa</h3>
+            <p>Crispy Masala Dosa, a South Indian classic.</p>
+            <p class="price">₹200</p>
+          </div>
+
+          <div class="menu-item" onclick="selectDish('Rajma Chawal')">
+            <img src="./images/rajmachawal.jpg" alt="Rajma Chawal" />
+            <h3>Rajma Chawal</h3>
+            <p>A hearty bowl of Rajma Chawal.</p>
+            <p class="price">₹159</p>
+          </div>
+
+          <div class="menu-item">
+            <img src="./images/butternan.jpg" alt="Butter Naan" />
+            <h3>Butter Naan</h3>
+            <p>Soft Indian flatbread baked in a tandoor.</p>
+            <p class="price">₹80</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Delight Dine. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Table</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Delight Dine</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="booking.html" class="active">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      class="order-main"
+      style="background-image: url('./images/bgimage.jpg')"
+    >
+      <div class="main-content">
+        <h1>Fill out the form below to book a table with us.</h1>
+        <p>Freshly prepared and delivered to your doorstep</p>
+      </div>
+    </section>
+
+    <section class="booking">
+      <div class="container">
+        <h2>Book a Table</h2>
+        <form id="bookingForm">
+          <input type="text" id="name" placeholder="Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="number"
+            id="guest"
+            min="1"
+            max="10"
+            placeholder="Guest"
+            required
+          />
+          <input type="date" id="date" required />
+          <input type="time" id="time" min="11:00" max="22:30" required />
+          <button type="submit" class="btn">Book Now</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
